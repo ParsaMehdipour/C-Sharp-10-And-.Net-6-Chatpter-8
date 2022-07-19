@@ -1,9 +1,10 @@
-﻿using static System.Console;
+﻿using System.Collections.Immutable;
+using static System.Console;
 
-//WorkingWithLists();
+WorkingWithLists();
 //WorkingWithDictionaries();
 //WorkingWithQueues();
-WorkingWithPriorityQueues();
+//WorkingWithPriorityQueues();
 
 static void Output(string title, IEnumerable<string> collection)
 {
@@ -34,6 +35,7 @@ static void WorkingWithLists()
     cities.Add("Paris");
     cities.Add("Milan");
 
+
     /* Alternative syntax that is converted by the compiler into
     the three Add method calls above
     List<string> cities = new()
@@ -63,6 +65,11 @@ static void WorkingWithLists()
     Output("After inserting Some Cities", cities);
 
 
+    ImmutableList<string> immutableCities = cities.ToImmutableList();
+    ImmutableList<string> newList = immutableCities.Add("Rio");
+
+    Output("Immutable list of cities:", immutableCities);
+    Output("New list of cities:", newList);
 }
 
 #endregion
