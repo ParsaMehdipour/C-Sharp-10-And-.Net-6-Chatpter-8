@@ -15,8 +15,7 @@ static void Output(string title, IEnumerable<string> collection)
     }
 }
 
-static void OutputPQ<TElement, TPriority>(string title,
-    IEnumerable<(TElement Element, TPriority Priority)> collection)
+static void OutputPQ<TElement, TPriority>(string title, IEnumerable<(TElement Element, TPriority Priority)> collection)
 {
     WriteLine(title);
     foreach ((TElement, TPriority) item in collection)
@@ -70,6 +69,24 @@ static void WorkingWithLists()
 
     Output("Immutable list of cities:", immutableCities);
     Output("New list of cities:", newList);
+
+    // two ways to define the same index, 3 in from the start
+    //Index i1 = new(value: 3); // counts from the start
+    //Index i2 = 3; // using implicit int conversion operator
+    // two ways to define the same index, 5 in from the end
+    //Index i3 = new(value: 5, fromEnd: true);
+    //Index i4 = ^5; // using the caret operator
+
+    //var s =cities[i1];
+
+
+    Range r1 = new(start: new Index(3), end: new Index(7));
+    Range r2 = new(start: 3, end: 7); // using implicit int conversion
+    Range r3 = 3..7; // using C# 8.0 or later syntax
+    Range r4 = Range.StartAt(3); // from index 3 to last index
+    Range r5 = 3..; // from index 3 to last index
+    Range r6 = Range.EndAt(3); // from index 0 to index 3
+    Range r7 = ..3; // from index 0 to index 3
 }
 
 #endregion
@@ -162,3 +179,18 @@ static void WorkingWithPriorityQueues()
 }
 
 #endregion
+
+// two ways to define the same index, 3 in from the start
+Index i1 = new(value: 3); // counts from the start
+Index i2 = 3; // using implicit int conversion operator
+// two ways to define the same index, 5 in from the end
+Index i3 = new(value: 5, fromEnd: true);
+Index i4 = ^5; // using the caret operator
+
+Range r1 = new(start: new Index(3), end: new Index(7));
+Range r2 = new(start: 3, end: 7); // using implicit int conversion
+Range r3 = 3..7; // using C# 8.0 or later syntax
+Range r4 = Range.StartAt(3); // from index 3 to last index
+Range r5 = 3..; // from index 3 to last index
+Range r6 = Range.EndAt(3); // from index 0 to index 3
+Range r7 = ..3; // from index 0 to index 3

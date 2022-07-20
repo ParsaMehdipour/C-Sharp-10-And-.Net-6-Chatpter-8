@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUi", "ConsoleUi\ConsoleUi.csproj", "{7AA37CDA-1F6C-4D33-962E-3A797581239E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithCollections", "WorkingWithCollections\WorkingWithCollections.csproj", "{B20CAB34-0616-4413-846E-21D6CB7D73AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithCollections", "WorkingWithCollections\WorkingWithCollections.csproj", "{B20CAB34-0616-4413-846E-21D6CB7D73AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRanges", "WorkingWithRanges\WorkingWithRanges.csproj", "{7F1AE495-28DD-45CA-8E32-5CA1947A8222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B20CAB34-0616-4413-846E-21D6CB7D73AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20CAB34-0616-4413-846E-21D6CB7D73AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20CAB34-0616-4413-846E-21D6CB7D73AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F1AE495-28DD-45CA-8E32-5CA1947A8222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1AE495-28DD-45CA-8E32-5CA1947A8222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1AE495-28DD-45CA-8E32-5CA1947A8222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1AE495-28DD-45CA-8E32-5CA1947A8222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
