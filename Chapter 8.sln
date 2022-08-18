@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithCollections", "W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithRanges", "WorkingWithRanges\WorkingWithRanges.csproj", "{7F1AE495-28DD-45CA-8E32-5CA1947A8222}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithNetworkResources", "WorkingWithNetworkResources\WorkingWithNetworkResources.csproj", "{842BA74D-B68B-4176-92C9-51A0C4FEA031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithNetworkResources", "WorkingWithNetworkResources\WorkingWithNetworkResources.csproj", "{842BA74D-B68B-4176-92C9-51A0C4FEA031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithReflection", "WorkingWithReflection\WorkingWithReflection.csproj", "{BAEAB2A3-B3B9-4732-90B0-1BAD0C5E9523}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithReflection", "WorkingWithReflection\WorkingWithReflection.csproj", "{BAEAB2A3-B3B9-4732-90B0-1BAD0C5E9523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internationalization", "Internationalization\Internationalization.csproj", "{5372A816-8C30-4246-8C5B-A368964B574B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{BAEAB2A3-B3B9-4732-90B0-1BAD0C5E9523}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAEAB2A3-B3B9-4732-90B0-1BAD0C5E9523}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAEAB2A3-B3B9-4732-90B0-1BAD0C5E9523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5372A816-8C30-4246-8C5B-A368964B574B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5372A816-8C30-4246-8C5B-A368964B574B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5372A816-8C30-4246-8C5B-A368964B574B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5372A816-8C30-4246-8C5B-A368964B574B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
